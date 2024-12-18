@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Navbar from "./Navbar.jsx";
 import axios from "axios";
+import { toast } from "react-toastify";
 
 const Shortit = () => {
 
@@ -24,9 +25,11 @@ const Shortit = () => {
             if(responce.data.success){
                 const sh_url = "https://urlshortner-frontend-8z6d.onrender.com/u/"+responce.data.isUrl.shorturl;
                 setShorturl(sh_url);
+                toast.success(responce.data.message);
             }
             else{
                 console.log(responce.data.message);
+                toast.error(responce.data.message);
             }      
 
         } catch (error) {
