@@ -24,7 +24,7 @@ const Signup = () => {
 
     try {
       const responce = await axios.post(
-        "https://urlshortner-backend-bg9r.onrender.com/api/v1/user/signup",
+        "https://urlshortner-backend-m49y.onrender.com/api/v1/user/signup",
         user,{withCredentials: true}
       );
 
