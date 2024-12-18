@@ -25,7 +25,7 @@ app.use(cookieParser());
 
 // cors for cross origin resorce sharing 
 app.use(cors({
-    origin:"https://urlshortner-frontend-8z6d.onrender.com/",
+    origin:"https://l2s-xovy.onrender.com",
     credentials:true,
     methods:["GET","POST"]
 }));
@@ -36,13 +36,6 @@ app.use(cors({
 app.use("/api/v1/user",userRoute);
 app.use("/api/v2/url",urlRoute);
 app.get("/u/:shorturl",getData);
-
-
-app.use(express.static(path.join(_dirname , "/frontend/dist")));
-app.get('*',(_,res)=>{
-    res.sendFile(path.resolve(_dirname , "frontend","dist","index.html"));
-});
-
 
 
 
