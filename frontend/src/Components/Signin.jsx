@@ -68,7 +68,7 @@ const Signin = () => {
             <label className="mt-2">Password</label>
             <input
               className="border-2 h-9 mt-1"
-              type="text"
+              type="password"
               value={user.password}
               name="password"
               placeholder=""
