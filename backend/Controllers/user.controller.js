@@ -43,7 +43,7 @@ export const Signup = async(req,res)=>{
     } catch (error) {
         console.log(error);
         return res.status(500).json({
-            message:"Server error , please try again later",
+            message:error.message,
             success:false,
         });
     }
