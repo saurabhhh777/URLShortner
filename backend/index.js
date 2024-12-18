@@ -27,7 +27,7 @@ app.use(cookieParser());
 app.use(cors({
     origin:"https://urlshortner-frontend-8z6d.onrender.com/",
     credentials:true,
-    methods:"GET,POST,PUT"
+    methods:["GET","POST"]
 }));
 
 
