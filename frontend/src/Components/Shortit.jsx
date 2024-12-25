@@ -20,7 +20,7 @@ const Shortit = () => {
 
     try {
       const responce = await axios.post(
-        "http://localhost:7000/api/v2/url/short",
+        "https://urlshortner-backend-lm3n.onrender.com/api/v2/url/short",
         {url},
         {
           withCredentials: true,
