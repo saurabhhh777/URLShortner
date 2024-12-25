@@ -6,7 +6,7 @@ import isAuth  from "../Middlewares/auth.js";
 
 
 
-router.route("/short").post(isAuth,shortUrl);
+router.route("/short").post(shortUrl);
 
 
 export default router;
