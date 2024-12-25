@@ -64,7 +64,7 @@ const Firstpage = () => {
           </div>
         </div>
         <div className="h-screen w-1/2 justify-center justify-items-center items-center text-center">
-          <img src="../assets/second.png" alt="url-img" />
+          <img className="box-border mt-11" src="https://sushistash.tushitgarg.com/api/images/BQACAgUAAxkDAANqZ2vaV9OGNgSElIzdme0E4p8v2NkAApgUAALSmlhXgCI1AfXAh9Q2BA" alt="url-img" />
         </div>
       </div>
     </>
