@@ -31,7 +31,7 @@ app.use(cookieParser());
 app.use(cors({
     origin:"https://l2s-xovy.onrender.com",
     credentials:true,
-    methods:"GET,POST,PUT"
+    methods:["GET","POST","PUT"],
 }));
 
 
