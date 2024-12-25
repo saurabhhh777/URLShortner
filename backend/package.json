@@ -5,7 +5,6 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "dev":"nodemon index.js",
     "install-backend": "cd backend && npm install",
     "start-backend": "cd backend && node index.js",
     "install-frontend": "cd client && npm install",
