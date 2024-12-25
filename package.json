@@ -11,5 +11,8 @@
     "start-frontend": "cd frontend && npm run start"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "react-toastify": "^11.0.1"
+  }
 }

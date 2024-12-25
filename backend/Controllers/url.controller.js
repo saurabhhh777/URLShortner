@@ -17,25 +17,25 @@ export const shortUrl = async(req,res)=>{
 
         const shorturl = nanoid(8);
 
-        const id = req.id;
+        // const id = req.id;
 
         const isUrl = await urlModel.create({
             shorturl,
             unshorturl,
-            createdby:id,
+            // createdby:id,
         });
 
-        const isUser = await userModel.findById({
-            _id:id,
-        });
+        // const isUser = await userModel.findById({
+        //     _id:id,
+        // });
 
 
-        await userModel.create({
-            fullname:isUser.fullname,
-            email:isUser.email,
-            password:isUser.password,
-            history:isUrl._id,
-        });
+        // await userModel.create({
+        //     fullname:isUser.fullname,
+        //     email:isUser.email,
+        //     password:isUser.password,
+        //     history:isUrl._id,
+        // });
 
 
         console.log(`${isUrl} working in the urlModel !`);

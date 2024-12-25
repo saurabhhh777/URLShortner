@@ -13,7 +13,6 @@ const urlSchema = mongoose.Schema({
     createdby:{
         type:mongoose.Types.ObjectId,
         ref:"User",
-        default:"",
     }
 
 },{ timeStamp:true });

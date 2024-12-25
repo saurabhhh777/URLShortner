@@ -2,8 +2,14 @@ import React, { useEffect, useState } from "react";
 import { useNavigate, Link } from "react-router-dom";
 import axios from "axios";
 import { toast } from "react-toastify";
+import { useDispatch, useSelector } from "react-redux";
+import { setRuser } from "./redux/authSlice";
 
 const Signin = () => {
+
+  const{ruser} = useSelector(store=>store.auth);
+  const dispatch = useDispatch();
+
   const navigate = useNavigate();
 
   const [error, setError] = useState("");
@@ -28,6 +34,9 @@ const Signin = () => {
       );
       console.log(responce.data);
       if (responce.data.success) {
+
+        dispatch(setRuser(responce.data.isUser));
+
         navigate("/");
         toast.success(responce.data.message); // Correct success toast
       } else {
