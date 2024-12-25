@@ -24,7 +24,7 @@ const Signup = () => {
 
     try {
       const responce = await axios.post(
-        "http://localhost:7000/api/v1/user/signup",
+        "https://urlshortner-backend-m49y.onrender.com/api/v1/user/signup",
         user
       );
 
