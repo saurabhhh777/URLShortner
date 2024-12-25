@@ -29,7 +29,7 @@ const Shortit = () => {
       console.log(responce);
 
       if (responce.data.success) {
-        const sh_url = "https://l2s-xovy.onrender.com" + responce.data.isUrl.shorturl;
+        const sh_url = "https://l2s-xovy.onrender.com/" + responce.data.isUrl.shorturl;
         setShorturl(sh_url);
       } else {
         console.log(responce.data.message);
