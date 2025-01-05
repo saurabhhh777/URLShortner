@@ -22,7 +22,7 @@ Installation and Setup
 
   Clone the Repository:
   
-    git clone https://github.com/yourusername/URLShortner.git
+    git clone https://github.com/saurabhhh777/URLShortner.git
     cd URLShortner
 
   Install Dependencies:
